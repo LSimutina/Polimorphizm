@@ -20,13 +20,13 @@ public class Main {
 
     }
 
-    static double mGetLength(LengthAble object){
+    static double mGetLength(LengthAble object) {
         double result = 0;
         result = object.getLength();
         return result;
     }
 
-    interface LengthAble{
+    interface LengthAble {
         double getLength();
     }
 }
