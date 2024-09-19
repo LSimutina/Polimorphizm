@@ -1,16 +1,14 @@
-import java.util.Random;
-
-public abstract class Figure {
+public abstract class Figure implements Main.sumAllAreasAble {
     public abstract double getArea();
 }
 
 
-class Сircle extends Figure {
+class Сircle1 extends Figure {
     Point point;
     int radius;
     double Pi = 3.14;
 
-    public Сircle(Point point, int radius) {
+    public Сircle1(Point point, int radius) {
         this.point = point;
         this.radius = radius;
     }
