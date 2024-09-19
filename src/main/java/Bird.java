@@ -1,8 +1,6 @@
 import java.util.Random;
 
 public abstract class Bird implements Main.SingAble {
-    String name;
-
     public abstract void sing();
 }
 
