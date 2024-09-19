@@ -8,6 +8,7 @@ public class Main {
 
         Point[] arrPoint = {p1, p2, p3, p4};
 
+        StringText text = new StringText("Hello World");
         Line line = new Line(p1, p2);
         PolyLine polyLine = new PolyLine(arrPoint);
         ClosedPolyLine closedPolyLine = new ClosedPolyLine(arrPoint);
@@ -17,7 +18,7 @@ public class Main {
         System.out.println(mGetLength(line));
         System.out.println(mGetLength(polyLine));
         System.out.println(mGetLength(closedPolyLine));
-
+        System.out.println(mGetLength(text));
     }
 
     static double mGetLength(LengthAble object) {
