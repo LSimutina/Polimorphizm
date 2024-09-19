@@ -1,28 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        Point p1 = new Point(1, 1);
-        Point p2 = new Point(2, 1);
-        Point p3 = new Point(2, 2);
-        Point p4 = new Point(1, 2);
+        Fraction fraction = new Fraction(2,3);
+        System.out.println(fraction.toString());
+        System.out.println(fraction.intValue());
+        System.out.println(fraction.longValue());
+        System.out.println(fraction.floatValue());
+        System.out.println(fraction.doubleValue());
 
-        Point[] arrPoint = {p1, p2, p3, p4};
-
-        StringText text = new StringText("Hello World");
-        Line line = new Line(p1, p2);
-        PolyLine polyLine = new PolyLine(arrPoint);
-        ClosedPolyLine closedPolyLine = new ClosedPolyLine(arrPoint);
-
-        System.out.println(polyLine.getLength());
-        System.out.println(closedPolyLine.closedLength());
-        System.out.println(mGetLength(line));
-        System.out.println(mGetLength(polyLine));
-        System.out.println(mGetLength(closedPolyLine));
-        System.out.println(mGetLength(text));
     }
 
     static double mGetLength(LengthAble object) {
-        double result = 0;
+        double result;
         result = object.getLength();
         return result;
     }
