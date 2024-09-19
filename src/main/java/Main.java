@@ -1,26 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        String text = "Карусель, карусель\n" +
-                "Начинает рассказ\n" +
-                "Это сказки, песни и веселье\n" +
-                "Карусель, карусель —\n" +
-                "Это радость для нас\n" +
-                "Прокатись на нашей карусели\n";
+        Point p1 = new Point(2,2);
 
-        Sparrow tom = new Sparrow("tom");
-        Cuckoo kukusha = new Cuckoo("Kukusha");
-        Parrot grisha = new Parrot("Grisha", text);
+        Сircle circle1 = new Сircle(p1,2);
+        System.out.println(circle1.getArea());
 
-        birdMarket(tom);
-        birdMarket(kukusha);
-        birdMarket(grisha);
-    }
+        Square square = new Square(p1, 2);
+        System.out.println(square.getArea());
 
-    public static void birdMarket(SingAble object){
-        object.sing();
-    }
+        Rectangle rectangle = new Rectangle(p1,3,4);
+        System.out.println(rectangle.getArea());
 
-    interface SingAble{
-        void sing();
     }
 }
