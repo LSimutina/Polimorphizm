@@ -1,30 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-
-        Sparrow tom = new Sparrow("tom");
-        tom.sing();
-
-        Cuckoo kukusha = new Cuckoo("Kukusha");
-        kukusha.sing();
-
         String text = "Карусель, карусель\n" +
                 "Начинает рассказ\n" +
                 "Это сказки, песни и веселье\n" +
                 "Карусель, карусель —\n" +
                 "Это радость для нас\n" +
                 "Прокатись на нашей карусели\n";
+
+        Sparrow tom = new Sparrow("tom");
+        Cuckoo kukusha = new Cuckoo("Kukusha");
         Parrot grisha = new Parrot("Grisha", text);
-        grisha.sing();
 
+        birdMarket(tom);
+        birdMarket(kukusha);
+        birdMarket(grisha);
     }
 
-    static double mGetLength(LengthAble object) {
-        double result;
-        result = object.getLength();
-        return result;
+    public static void birdMarket(SingAble object){
+        object.sing();
     }
 
-    interface LengthAble {
-        double getLength();
+    interface SingAble{
+        void sing();
     }
 }
