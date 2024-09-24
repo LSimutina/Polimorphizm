@@ -1,3 +1,5 @@
+package ru.сourses.geometry;
+
 class Fraction extends Number {
     int num, denum;
 
@@ -7,7 +9,7 @@ class Fraction extends Number {
     }
 
     public String toString() {
-        return "Fraction {" + num + "/" + denum + "}";
+        return "ru.сourses.geometry.Fraction {" + num + "/" + denum + "}";
     }
 
     @Override

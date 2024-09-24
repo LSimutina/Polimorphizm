@@ -1,3 +1,5 @@
+package ru.сourses.geometry;
+
 public class StringText implements Main.LengthAble {
     String text;
 

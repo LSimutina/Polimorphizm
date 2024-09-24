@@ -1,3 +1,9 @@
+package ru.сourses.geometry;
+
+import ru.сourses.birds.Cuckoo;
+import ru.сourses.birds.Parrot;
+import ru.сourses.birds.Sparrow;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -26,5 +32,21 @@ public class Main {
 
     interface LengthAble {
         double getLength();
+    }
+
+    public static void birdMarket(SingAble object){
+        object.sing();
+    }
+
+    interface SingAble{
+        void sing();
+    }
+
+    public static double sumAllAreas(sumAllAreasAble object){
+        return object.getArea();
+    }
+
+    interface sumAllAreasAble {
+        double getArea();
     }
 }

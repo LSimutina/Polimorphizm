@@ -1,15 +1,15 @@
+package ru.сourses.birds;
+
 import java.util.Random;
 
-public abstract class Bird {
-    String name;
-
+public abstract class BirdMarket {
     public abstract void sing();
 }
 
-class Sparrow extends Bird {
+class SparrowMarket extends Bird {
     String name;
 
-    public Sparrow(String name) {
+    public SparrowMarket(String name) {
         this.name = name;
     }
 
@@ -19,10 +19,10 @@ class Sparrow extends Bird {
     }
 }
 
-class Cuckoo extends Bird {
+class CuckooMarket extends Bird {
     String name;
 
-    public Cuckoo(String name) {
+    public CuckooMarket(String name) {
         this.name = name;
     }
 
@@ -36,11 +36,11 @@ class Cuckoo extends Bird {
     }
 }
 
-class Parrot extends Bird {
+class ParrotMarket extends Bird {
     String name;
     String text;
 
-    public Parrot(String name, String text) {
+    public ParrotMarket(String name, String text) {
         this.name = name;
         this.text = text;
     }
