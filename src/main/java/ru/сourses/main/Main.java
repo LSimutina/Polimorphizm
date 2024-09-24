@@ -1,27 +1,25 @@
 package ru.сourses.main;
 
-import ru.сourses.birds.Cuckoo;
-import ru.сourses.birds.Parrot;
-import ru.сourses.birds.Sparrow;
+import java.util.Scanner;
+
+import static java.lang.Integer.parseInt;
+import static java.lang.Math.pow;
 
 public class Main {
     public static void main(String[] args) {
 
-        Sparrow tom = new Sparrow("tom");
-        tom.sing();
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Вводим первое число");
+        String x = sc1.next();
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Вводим второе число");
+        String y = sc2.next();
+        System.out.println(raisingToAPower(x,y));
 
-        Cuckoo kukusha = new Cuckoo("Kukusha");
-        kukusha.sing();
+    }
 
-        String text = "Карусель, карусель\n" +
-                "Начинает рассказ\n" +
-                "Это сказки, песни и веселье\n" +
-                "Карусель, карусель —\n" +
-                "Это радость для нас\n" +
-                "Прокатись на нашей карусели\n";
-        Parrot grisha = new Parrot("Grisha", text);
-        grisha.sing();
-
+    public static double raisingToAPower(String x, String y){
+       return (double) pow(parseInt(x), parseInt(y));
     }
 
     static double mGetLength(LengthAble object) {
@@ -30,7 +28,7 @@ public class Main {
         return result;
     }
 
-    interface LengthAble {
+    public interface LengthAble {
         double getLength();
     }
 
@@ -46,7 +44,7 @@ public class Main {
         return object.getArea();
     }
 
-    interface sumAllAreasAble {
+    public interface sumAllAreasAble {
         double getArea();
     }
 }
