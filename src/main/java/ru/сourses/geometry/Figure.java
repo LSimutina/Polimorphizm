@@ -1,5 +1,7 @@
 package ru.сourses.geometry;
 
+import ru.сourses.main.Main;
+
 public abstract class Figure implements Main.sumAllAreasAble {
     public abstract double getArea();
 }

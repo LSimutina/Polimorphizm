@@ -1,5 +1,7 @@
 package ru.сourses.geometry;
 
+import ru.сourses.main.Main;
+
 public class Line implements Main.LengthAble {
     Point start;
     Point finish;

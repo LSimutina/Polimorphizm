@@ -1,5 +1,7 @@
 package ru.сourses.geometry;
 
+import ru.сourses.main.Main;
+
 public class PolyLine implements Main.LengthAble {
     Point[] points;
 
